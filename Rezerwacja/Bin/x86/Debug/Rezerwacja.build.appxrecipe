@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-PJ2Q1KBT17V</Machine>
+    <WindowsUser>Tomek</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>498b691c-40c2-4934-b141-2d79c1cdfeee</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja.dll">
+      <PackagePath>Rezerwacja.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\lib\wp81\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll">
+      <PackagePath>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd">
+      <PackagePath>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
