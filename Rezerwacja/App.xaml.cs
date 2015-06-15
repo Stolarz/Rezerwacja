@@ -9,6 +9,7 @@ using Microsoft.Phone.Shell;
 using Rezerwacja.Resources;
 using SQLitePCL;
 using Rezerwacja;
+using Windows.Storage;
 namespace Rezerwacja
 {
     public partial class App : Application

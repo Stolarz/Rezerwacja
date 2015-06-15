@@ -49,3 +49,5 @@ c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x
 c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja_Debug_x86.xap
 c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml
 c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\XapCacheFile.xml
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacje.g.cs
