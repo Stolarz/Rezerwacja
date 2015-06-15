@@ -19,6 +19,7 @@
     <File>AppManifest.xaml</File>
     <File>Assets\ApplicationIcon.png</File>
     <File>Assets\Tiles\FlipCycleTileMedium.png</File>
+    <File>Microsoft.Phone.Controls.dll</File>
     <File Type="PCL">SQLitePCL.dll</File>
     <File>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd</File>
     <File>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll</File>

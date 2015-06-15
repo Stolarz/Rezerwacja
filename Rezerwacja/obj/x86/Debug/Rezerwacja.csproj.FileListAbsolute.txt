@@ -51,3 +51,7 @@ c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x
 c:\users\tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\XapCacheFile.xml
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacje.g.cs
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\DodajObiekt.g.cs
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Obiekty.g.cs
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\RezerwacjaInfo.g.cs

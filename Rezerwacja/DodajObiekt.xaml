@@ -32,6 +32,7 @@
             <TextBox x:Name="ObiektNazwaTextbox" HorizontalAlignment="Left" Height="72" Margin="0,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456"/>
             <TextBox x:Name="ObiektIloscTextbox" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456" Margin="0,151,0,0"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,119,0,0" TextWrapping="Wrap" Text="Ilość osób" VerticalAlignment="Top" RenderTransformOrigin="-0.045,0.536"/>
+            <Button Content="Dodaj Obiekt" HorizontalAlignment="Left" Margin="95,511,0,0" VerticalAlignment="Top" Width="266"/>
 
         </Grid>
     </Grid>

@@ -11,12 +11,13 @@ namespace Rezerwacja
         public static void LoadDatabase(SQLiteConnection db)
         {
             string sql = @"CREATE TABLE IF NOT EXISTS
-                                Rezerwacja (Id      INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                Rezerwacje (Id      INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                                             Imie    VARCHAR( 140 ),
                                             Nazwisko    VARCHAR( 140 ),
                                             Ilosc INTEGER,
                                             Obiekt (VARCHAR( 140 ),
-                                            Data (VARCHAR( 140 ) 
+                                            Data (VARCHAR( 140 ),
+                                            Telefon(VARCHAR ( 15 ) 
                             );";
             using (var statement = db.Prepare(sql))
             {

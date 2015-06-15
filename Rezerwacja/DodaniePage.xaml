@@ -32,12 +32,13 @@
             <TextBox x:Name="ImieTextBox" HorizontalAlignment="Left" Height="72" Margin="10,32,-10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456" />
             <TextBlock HorizontalAlignment="Left" Margin="10,109,0,0" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top"/>
             <TextBox x:Name="NazwiskoTextBox" HorizontalAlignment="Left" Height="72" Margin="10,136,-10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456"/>
-            <Slider HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="436" Maximum="7" Minimum="1" Value="1" SmallChange="1" />
+            <Slider x:Name="IloscSlider" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="436" Maximum="7" Minimum="1" Value="1" SmallChange="1" />
             <TextBlock HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" Text="Ilość gości" VerticalAlignment="Top"/>
-            <Button Content="Wybierz obiekt rezerwacji" HorizontalAlignment="Left" Margin="70,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,-0.195"/>
-            <TextBlock x:Name="ObiektText" HorizontalAlignment="Left" Margin="133,397,0,0" TextWrapping="Wrap" Text="Nie wybrano obiektu" VerticalAlignment="Top"/>
-            <Button Content="Wybierz date" HorizontalAlignment="Left" Margin="133,429,0,0" VerticalAlignment="Top"/>
-            <Button Content="Dodaj" HorizontalAlignment="Left" Margin="10,524,0,0" VerticalAlignment="Top" Height="83" Width="436"/>
+            <Button Content="Wybierz obiekt rezerwacji" HorizontalAlignment="Left" Margin="66,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,-0.195"/>
+            <TextBlock x:Name="ObiektText" HorizontalAlignment="Left" Margin="133,376,0,0" TextWrapping="Wrap" Text="Nie wybrano obiektu" VerticalAlignment="Top"/>
+            <Button Content="Wybierz date" HorizontalAlignment="Left" Margin="130,408,0,0" VerticalAlignment="Top"/>
+            <Button Content="Dodaj" HorizontalAlignment="Left" Margin="10,524,0,0" VerticalAlignment="Top" Height="83" Width="436" Click="Button_Click"/>
+            <TextBlock x:Name="DataTextBlock" HorizontalAlignment="Left" Margin="133,485,0,0" TextWrapping="Wrap" Text="Nie wybrano daty" VerticalAlignment="Top" Width="184"/>
 
         </Grid>
     </Grid>
