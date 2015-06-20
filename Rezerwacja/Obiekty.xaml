@@ -28,8 +28,17 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector x:Name="ListaObiektow" HorizontalAlignment="Left" Height="587" Margin="10,10,0,0" VerticalAlignment="Top" Width="436"/>
-
+            <phone:LongListSelector x:Name="ListaObiektow" HorizontalAlignment="Left" Height="587" Margin="10,10,0,0" VerticalAlignment="Top" Width="436">
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <Run Text="{Binding Nazwa}"></Run>
+                            <Run Text="{Binding Ilosc}"></Run>
+                        </TextBlock>
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
+        
         </Grid>
     </Grid>
 

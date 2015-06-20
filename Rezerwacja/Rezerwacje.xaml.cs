@@ -9,7 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Collections.ObjectModel;
 using SQLitePCL;
-using Rezerwacja;
+
 namespace Rezerwacja
 {
     public partial class Rezerwacje : PhoneApplicationPage
@@ -17,6 +17,7 @@ namespace Rezerwacja
         public Rezerwacje()
         {
             InitializeComponent();
+            getValues();
         }
 
 

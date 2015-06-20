@@ -22,6 +22,11 @@ namespace Rezerwacja
             //BuildLocalizedApplicationBar();
         }
 
+        private void Rectangle_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
