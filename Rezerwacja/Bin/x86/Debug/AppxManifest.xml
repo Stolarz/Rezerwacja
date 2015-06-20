@@ -55,7 +55,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhone,Version=v8.1" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
-    <build:Item Name="OperatingSystem" Version="10.0.10130.0 (fbl_impressive.150522-2224)" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
     <build:Item Name="ProjectGUID" Value="{498B691C-40C2-4934-B141-2D79C1CDFEEE}" />
     <build:Item Name="SQLite.WP80" Version="3.8.10.2" />
