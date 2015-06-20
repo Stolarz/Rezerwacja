@@ -52,8 +52,8 @@
 
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Grid.Column="1"/>
-            <Rectangle Fill="#FF3E3E42" Grid.ColumnSpan="1" Height="200" Margin="10,217,10,0" Stroke="Black" VerticalAlignment="Top"/>
+            <Rectangle x:Name="DodajRezerwacjeMenu" Fill="#FF3E3E42" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Grid.Column="1" Tap="DodajRezerwacjeMenu_Tap"/>
+            <Rectangle x:Name="DodajObiektMenu" Fill="#FF3E3E42" Grid.ColumnSpan="1" Height="200" Margin="10,217,10,0" Stroke="Black" VerticalAlignment="Top" Tap="DodajObiektMenu_Tap"/>
             <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="200" Stroke="Black" VerticalAlignment="Top" Width="208" Margin="10,215,0,0" RenderTransformOrigin="0.554,1.022" Grid.Column="1"/>
             <Rectangle Fill="#FF3E3E42" Grid.ColumnSpan="1" HorizontalAlignment="Left" Height="200" Stroke="Black" VerticalAlignment="Top" Width="208" Margin="10,10,0,0" Tap="Rectangle_Tap"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" Text="Sprawdź rezerwacje" VerticalAlignment="Top" Height="32" Width="208"/>

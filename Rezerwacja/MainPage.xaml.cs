@@ -27,6 +27,16 @@ namespace Rezerwacja
             NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
         }
 
+        private void DodajObiektMenu_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/DodajObiekt.xaml", UriKind.Relative));
+        }
+
+        private void DodajRezerwacjeMenu_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/DodaniePage.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
