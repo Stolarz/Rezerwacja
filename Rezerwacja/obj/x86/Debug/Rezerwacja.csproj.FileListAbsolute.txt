@@ -55,3 +55,5 @@ C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\DodajObiekt.g.cs
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Obiekty.g.cs
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\RezerwacjaInfo.g.cs
+C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.dll
+C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.pdb

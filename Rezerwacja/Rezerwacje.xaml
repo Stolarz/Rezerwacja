@@ -19,7 +19,19 @@
 
             <!--Panorama item one-->
             <phone:PanoramaItem Header="Aktualne">
-                <Grid/>
+        
+                <phone:LongListSelector Name="ListaRezerwacje">
+                    <phone:LongListSelector.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <Run Text="{Binding Imie}"></Run>
+                                <Run Text="{Binding Nazwisko}"></Run>
+                                <Run Text="{Binding Obiekt}"></Run>
+                            </TextBlock>
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                </phone:LongListSelector>
+
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
