@@ -9,15 +9,20 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Collections.ObjectModel;
 using SQLitePCL;
+
+
 namespace Rezerwacja
 {
     public partial class Obiekty : PhoneApplicationPage
     {
+        ObservableCollection<SzablonObiekt> x;
         public Obiekty()
         {
             InitializeComponent();
-            getValues();
-        }
+            x = getValues();
+
+            ListaObiektow.ItemsSource = x;
+        } 
 
 
         public class SzablonObiekt
@@ -32,14 +37,16 @@ namespace Rezerwacja
 
             using (var connection = new SQLiteConnection("database.db"))
             {
-                using (var statment = connection.Prepare(@"Select * FROM Obiekty;"))
+                using (var statment = connection.Prepare(@"Select Nazwa,Ilosc FROM Obiekty;"))
                 {
                     while (statment.Step() == SQLiteResult.ROW)
                     {
+                        
                         list.Add(new SzablonObiekt()
                         {
                             Nazwa = (string)statment[0],
                             Ilosc = statment[1].ToString()
+
                             
                         });
                     }

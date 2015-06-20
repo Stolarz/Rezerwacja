@@ -87,14 +87,6 @@ C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\SQLitePCL.dll
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\layout.resfiles
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\layout.resfiles.intermediate
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\Resources.resfiles
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\Resources.resfiles.intermediate
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\pri.resfiles
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\pri.resfiles.intermediate
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\priconfig.xml
-C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\priconfig.xml.intermediate
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL.pri
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\qualifiers.txt
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\priconfig.xml
@@ -111,3 +103,4 @@ C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\MultipleQualifiersPe
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml
 C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\XapCacheFile.xml
+C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache

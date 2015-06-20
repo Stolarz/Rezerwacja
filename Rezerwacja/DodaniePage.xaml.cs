@@ -46,5 +46,10 @@ namespace Rezerwacja
             }
 
         }
+
+        private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Obiekty.xaml", UriKind.Relative));
+        }
     }
 }

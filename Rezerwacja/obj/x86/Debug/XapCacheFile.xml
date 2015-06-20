@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2015-06-20 13:41:52">
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="2015-06-20 13:41:34" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.dll" archivePath="Rezerwacja.dll" lastWriteTime="2015-06-20 13:41:31" />
+﻿<xapCache source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2015-06-20 18:02:48">
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="2015-06-20 17:15:06" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.dll" archivePath="Rezerwacja.dll" lastWriteTime="2015-06-20 18:02:41" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.dll" archivePath="SQLitePCL.Ext.dll" lastWriteTime="2015-06-20 12:29:54" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2015-06-20 12:29:48" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="2015-06-20 12:29:48" />
@@ -14,21 +14,15 @@
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2015-06-20 12:29:48" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2015-06-20 12:29:48" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2015-06-20 12:29:48" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015-06-20 13:41:51" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2015-06-20 12:29:49" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015-06-20 17:15:20" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2015-06-20 12:29:48" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2015-06-20 12:29:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2014-10-16 06:23:12" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\packages\SQLitePCL.3.8.7.2\lib\wp81\SQLitePCL.dll" archivePath="SQLitePCL.dll" lastWriteTime="2015-06-20 12:29:55" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd" archivePath="SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd" lastWriteTime="2015-06-20 12:29:54" />
   <file source="C:\Users\Marcin\Desktop\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll" archivePath="SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll" lastWriteTime="2015-06-20 12:29:54" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.8.10.2\Redist\Debug\x86\sqlite3.dll" archivePath="sqlite3.dll" lastWriteTime="2015-06-20 13:38:42" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2015-06-20 12:29:48" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2015-06-20 12:29:48" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015-06-20 12:29:49" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="2015-06-20 13:41:51" />
-  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="2015-06-20 13:41:45" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015-06-20 17:15:20" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="2015-06-20 18:02:47" />
+  <file source="C:\Users\Marcin\Desktop\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="2015-06-20 17:15:15" />
 </xapCache>

@@ -34,7 +34,7 @@
             <TextBox x:Name="NazwiskoTextBox" HorizontalAlignment="Left" Height="72" Margin="10,136,-10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456"/>
             <Slider x:Name="IloscSlider" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="436" Maximum="7" Minimum="1" Value="1" SmallChange="1" />
             <TextBlock HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" Text="Ilość gości" VerticalAlignment="Top"/>
-            <Button Content="Wybierz obiekt rezerwacji" HorizontalAlignment="Left" Margin="66,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,-0.195"/>
+            <Button Content="Wybierz obiekt rezerwacji" HorizontalAlignment="Left" Margin="66,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,-0.195" Tap="Button_Tap"/>
             <TextBlock x:Name="ObiektText" HorizontalAlignment="Left" Margin="133,376,0,0" TextWrapping="Wrap" Text="Nie wybrano obiektu" VerticalAlignment="Top" TextAlignment="Center"/>
             <Button Content="Wybierz date" HorizontalAlignment="Left" Margin="130,408,0,0" VerticalAlignment="Top"/>
             <Button Content="Dodaj" HorizontalAlignment="Left" Margin="10,524,0,0" VerticalAlignment="Top" Height="83" Width="436" Click="Button_Click"/>

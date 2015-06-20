@@ -15,9 +15,9 @@ namespace Rezerwacja
                                             Imie    VARCHAR( 140 ),
                                             Nazwisko    VARCHAR( 140 ),
                                             Ilosc INTEGER,
-                                            Obiekt (VARCHAR( 140 ),
-                                            Data (VARCHAR( 140 ),
-                                            Telefon(VARCHAR ( 15 ) 
+                                            Obiekt VARCHAR( 140 ),
+                                            Data VARCHAR( 140 ),
+                                            Telefon VARCHAR ( 15 ) 
                             );";
             using (var statement = db.Prepare(sql))
             {
