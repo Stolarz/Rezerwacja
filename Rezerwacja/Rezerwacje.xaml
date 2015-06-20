@@ -20,7 +20,7 @@
             <!--Panorama item one-->
             <phone:PanoramaItem Header="Aktualne">
         
-                <phone:LongListSelector Name="ListaRezerwacje">
+                <phone:LongListSelector Name="ListaRezerwacje" SelectionChanged="ListaRezerwacje_SelectionChanged">
                     <phone:LongListSelector.ItemTemplate>
                         <DataTemplate>
                             <TextBlock>

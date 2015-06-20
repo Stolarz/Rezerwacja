@@ -17,7 +17,14 @@ namespace Rezerwacja
         {
             InitializeComponent();
             
+
         }
+
+      
+      
+
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -25,14 +32,14 @@ namespace Rezerwacja
             {
                 using(var connection = new SQLiteConnection("database.db"))
                 {
-                    using(var statment = connection.Prepare(@"INSERT INTO Rezerwacje(ID,Imie,Nazwisko,Ilosc,Obiekt,Data,Telefon) VALUES (?,?,?,?,?,?,?);"))
+                    using(var statment = connection.Prepare(@"INSERT INTO Rezerwacje(Imie,Nazwisko,Ilosc,Obiekt,Data,Telefon) VALUES (?,?,?,?,?,?);"))
                     {
-                        statment.Bind(1, 1);
-                        statment.Bind(2, ImieTextBox.Text);
-                        statment.Bind(3, NazwiskoTextBox.Text);
-                        statment.Bind(4, IloscSlider.Value);
-                        statment.Bind(5, ObiektText.Text);
-                        statment.Bind(6, DataTextBlock.Text);
+                        
+                        statment.Bind(1, ImieTextBox.Text);
+                        statment.Bind(2, NazwiskoTextBox.Text);
+                        statment.Bind(3, IloscSlider.Value);
+                        statment.Bind(4, ObiektText.Text);
+                        statment.Bind(5, DataTextBlock.Text);
                         statment.Step();
                         statment.Reset();
                         statment.ClearBindings();
@@ -50,6 +57,11 @@ namespace Rezerwacja
         private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Obiekty.xaml", UriKind.Relative));
+            string msg = string.Empty;
+            if (NavigationContext.QueryString.TryGetValue("msg", out msg))
+            {
+                ObiektText.Text = msg;
+            }
         }
     }
 }

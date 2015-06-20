@@ -2,6 +2,7 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="Rezerwacja" Source="Rezerwacja.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
     <AssemblyPart x:Name="SQLitePCL" Source="SQLitePCL.dll" />
     <AssemblyPart x:Name="SQLitePCL.Ext.WindowsPhone8.RuntimeProxy" Source="SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll" />
   </Deployment.Parts>

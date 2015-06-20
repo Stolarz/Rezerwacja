@@ -27,6 +27,7 @@ namespace Rezerwacja
 
         public class SzablonObiekt
         {
+            public string Id { get; set; }
             public string Nazwa { get; set; }
             public string Ilosc { get; set; }
 
@@ -37,15 +38,16 @@ namespace Rezerwacja
 
             using (var connection = new SQLiteConnection("database.db"))
             {
-                using (var statment = connection.Prepare(@"Select Nazwa,Ilosc FROM Obiekty;"))
+                using (var statment = connection.Prepare(@"Select Id,Nazwa,Ilosc FROM Obiekty;"))
                 {
                     while (statment.Step() == SQLiteResult.ROW)
                     {
                         
                         list.Add(new SzablonObiekt()
                         {
-                            Nazwa = (string)statment[0],
-                            Ilosc = statment[1].ToString()
+                            Id = statment[0].ToString(),
+                            Nazwa = (string)statment[1],
+                            Ilosc = statment[2].ToString()
 
                             
                         });
@@ -55,5 +57,26 @@ namespace Rezerwacja
             return list;
         }
 
+        
+        
+    public void ListaObiektow_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        
+        SzablonObiekt element = (SzablonObiekt)(sender as LongListSelector).SelectedItem;
+        NavigationService.Navigate(new Uri("/DodaniePage.xaml?msg="+element.Nazwa, UriKind.Relative));
+
+    }
+
+    private void Delete_Click(object sender, RoutedEventArgs e)
+    {
+        SzablonObiekt obiekt = (SzablonObiekt)(sender as MenuItem).DataContext;
+       MessageBoxResult result = MessageBox.Show("Uwaga za chwię usuniesz obiekt o nazwie: " + obiekt.Nazwa + " Czy jesteś pewien ?", "Usuwanie", MessageBoxButton.OKCancel);
+       if (result == MessageBoxResult.OK)
+       {
+           UsunClass.delete("Obiekty", obiekt.Id);
+           x.Remove(obiekt);
+       }
+    }
+    
     }
 }

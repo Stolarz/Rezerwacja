@@ -28,21 +28,31 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31">
-            	<Run Text="Imię"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22">
-            	<Run Text="Nazwisko"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" Text="Obiekt" VerticalAlignment="Top" RenderTransformOrigin="0.454,1.131"/>
-            <TextBlock HorizontalAlignment="Left" Margin="107,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="107,41,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="107,73,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            <phone:LongListSelector x:Name="ListaRezerwacjeInfo">
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                                <Run Text="Imie: " />
+                                <Run Text="{Binding Imie}"></Run>
+                                <Run Text="&#x0a;Nazwisko:" />
+                                <Run Text="{Binding Nazwisko}"></Run>
+                                <Run Text="&#x0a;Obiekt:" />
+                                <Run Text="{Binding Obiekt}"></Run>
+                                <Run Text="&#x0a;Ilosc:" />    
+                                <Run Text="{Binding Ilosc}"></Run>
+                                <Run Text="&#x0a;Data:" />
+                                <Run Text="{Binding Data}"></Run>
+                        </TextBlock>
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
         </Grid>
     </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton Click="Usun_Click" IconUri="/Toolkit.Content/ApplicationBar.Delete.png" Text="Usuń"/>
+            
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>
