@@ -33,6 +33,7 @@ namespace Rezerwacja
                 EditValues.Goscie = NavigationContext.QueryString["Goscie"];
                 EditValues.Data = NavigationContext.QueryString["Data"];
                 EditValues.Cena = NavigationContext.QueryString["Cena"];
+                EditValues.Telefon = NavigationContext.QueryString["Telefon"];
                 ObiektText.Text = EditValues.Obiekt;
                 WyborDaty.Value = Convert.ToDateTime(EditValues.Data);
                 //CenaTextBlock.Text = EditValues.Cena;
@@ -42,6 +43,7 @@ namespace Rezerwacja
             NazwiskoTextBox.Text = EditValues.Nazwisko;
             IloscDni.Text = EditValues.Dni;
             LiczbaGosci.Text = EditValues.Goscie;
+            NumerTelefonu.Text = EditValues.Telefon;
             if (NavigationContext.QueryString.TryGetValue("msg", out msg))
             {
                 ObiektText.Text = msg;
@@ -57,7 +59,7 @@ namespace Rezerwacja
              private void Button_Click(object sender, RoutedEventArgs e)
              {
                  int pelnacena = Convert.ToInt32(CenaTextBlock.Text) * Convert.ToInt32(IloscDni.Text);
-                 UsunClass.edit(id, ImieTextBox.Text, NazwiskoTextBox.Text, ObiektText.Text, LiczbaGosci.Text, IloscDni.Text, WyborDaty.Value.ToString().Substring(0, 9), pelnacena);
+                 UsunClass.edit(id, ImieTextBox.Text, NazwiskoTextBox.Text, ObiektText.Text, LiczbaGosci.Text, IloscDni.Text, WyborDaty.Value.ToString().Substring(0, 9), pelnacena,NumerTelefonu.Text);
                  MessageBox.Show("Edycja wykonana pomyślnie. Nastąpi przejście do listy rezerwacji");
                  NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
              }

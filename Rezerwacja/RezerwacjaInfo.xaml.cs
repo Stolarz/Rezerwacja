@@ -105,7 +105,7 @@ namespace Rezerwacja
         {
             Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
             if (ListaRezerwacjeInfo.SelectedItem != null)
-                NavigationService.Navigate(new Uri("/Edytuj.xaml?Id=" + rezerwacja.Id + "&Imie=" + rezerwacja.Imie + "&Nazwisko=" + rezerwacja.Nazwisko + "&Obiekt=" + rezerwacja.Obiekt + "&Dni=" + rezerwacja.IloscDni + "&Goscie=" + rezerwacja.IloscGosci + "&Data=" + rezerwacja.Data + "&Cena=" + rezerwacja.Cena, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Edytuj.xaml?Id=" + rezerwacja.Id + "&Imie=" + rezerwacja.Imie + "&Nazwisko=" + rezerwacja.Nazwisko + "&Obiekt=" + rezerwacja.Obiekt + "&Dni=" + rezerwacja.IloscDni + "&Goscie=" + rezerwacja.IloscGosci + "&Data=" + rezerwacja.Data + "&Cena=" + rezerwacja.Cena+"&Telefon="+rezerwacja.Telefon, UriKind.Relative));
             else
                 MessageBox.Show("Zaznacz rezerwację");
         }

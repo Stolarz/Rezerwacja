@@ -16,6 +16,7 @@ namespace Rezerwacja
         public static string Goscie { get; set; }
         public static string Data { get; set; }
         public static string Cena { get; set; }
+        public static string Telefon { get; set; }
 
     }
 }

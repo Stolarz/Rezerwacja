@@ -32,7 +32,7 @@ namespace Rezerwacja
             }
         }
 
-        public static void edit(string id, string imie, string nazwisko, string obiekt, string osoby, string dni, string data,int zaplata)
+        public static void edit(string id, string imie, string nazwisko, string obiekt, string osoby, string dni, string data,int zaplata,string telefon)
         {
             using (var connection = new SQLiteConnection("database.db"))
             {
@@ -43,7 +43,7 @@ namespace Rezerwacja
                     statement.Bind(3, osoby);
                     statement.Bind(4, obiekt);
                     statement.Bind(5, data);
-                    statement.Bind(6, "123");
+                    statement.Bind(6, telefon);
                     statement.Bind(7, dni);
                     statement.Bind(8, zaplata);
                     statement.Bind(9, id);
