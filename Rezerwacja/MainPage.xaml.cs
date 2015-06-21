@@ -37,6 +37,11 @@ namespace Rezerwacja
             NavigationService.Navigate(new Uri("/DodaniePage.xaml", UriKind.Relative));
         }
 
+        private void ListaObiektyMenu_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Obiekty.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

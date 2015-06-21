@@ -30,6 +30,7 @@ namespace Rezerwacja
             public string Id { get; set; }
             public string Nazwa { get; set; }
             public string Ilosc { get; set; }
+            public string Cena { get; set; }
 
         }
         public static ObservableCollection<SzablonObiekt> getValues()
@@ -38,7 +39,7 @@ namespace Rezerwacja
 
             using (var connection = new SQLiteConnection("database.db"))
             {
-                using (var statment = connection.Prepare(@"Select Id,Nazwa,Ilosc FROM Obiekty;"))
+                using (var statment = connection.Prepare(@"Select Id, Nazwa, Ilosc, Cena FROM Obiekty;"))
                 {
                     while (statment.Step() == SQLiteResult.ROW)
                     {
@@ -47,9 +48,8 @@ namespace Rezerwacja
                         {
                             Id = statment[0].ToString(),
                             Nazwa = (string)statment[1],
-                            Ilosc = statment[2].ToString()
-
-                            
+                            Ilosc = statment[2].ToString(),
+                            Cena = statment[3].ToString()
                         });
                     }
                 }
@@ -61,9 +61,12 @@ namespace Rezerwacja
         
     public void ListaObiektow_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        
+        string msg = "";
         SzablonObiekt element = (SzablonObiekt)(sender as LongListSelector).SelectedItem;
-        NavigationService.Navigate(new Uri("/DodaniePage.xaml?msg="+element.Nazwa, UriKind.Relative));
+        if (NavigationContext.QueryString.TryGetValue("msg", out msg))
+        NavigationService.Navigate(new Uri("/Edytuj.xaml?msg=" + element.Nazwa + "&cena=" + element.Cena, UriKind.Relative));
+        else
+        NavigationService.Navigate(new Uri("/DodaniePage.xaml?msg="+element.Nazwa+"&cena="+element.Cena, UriKind.Relative));
 
     }
 

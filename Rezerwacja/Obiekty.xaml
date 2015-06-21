@@ -23,7 +23,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Menadżer rezerwacji" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock Text="Lista obiektów" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
@@ -33,8 +33,13 @@
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <TextBlock>
+                            <Run Text="Nazwa Obiektu: "/>
                             <Run Text="{Binding Nazwa}"></Run>
+                            <Run Text="&#x0a;Ilość Miejsc: "/>
                             <Run Text="{Binding Ilosc}"></Run>
+                            <Run Text="&#x0a;Cena za dobę: "/>
+                            <Run Text="{Binding Cena}"></Run>
+                            <Run Text="&#x0a;----------------------"/>
                            <toolkit:ContextMenuService.ContextMenu>
                         <toolkit:ContextMenu Name="ContextMenu" >
                             <toolkit:MenuItem 

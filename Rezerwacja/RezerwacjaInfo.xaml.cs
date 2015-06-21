@@ -42,9 +42,11 @@ namespace Rezerwacja
             public string Imie { get; set; }
             public string Nazwisko { get; set; }
             public string Obiekt { get; set; }
-            public string Ilosc { get; set; }
+            public string IloscGosci { get; set; }
             public string Data { get; set; }
             public string Telefon { get; set; }
+            public string IloscDni { get; set; }
+            public string Cena { get; set; }
         }
 
 
@@ -67,10 +69,12 @@ namespace Rezerwacja
                             Id = statment[0].ToString(),
                             Imie = (string)statment[1],
                             Nazwisko = (string)statment[2],
-                            Ilosc = statment[3].ToString(),
+                            IloscGosci = statment[3].ToString(),
                             Obiekt = (string)statment[4],
                             Data = (string)statment[5],
-                            Telefon = (string)statment[6]
+                            Telefon = (string)statment[6],
+                            IloscDni = statment[7].ToString(),
+                            Cena = statment[8].ToString()
                         });
                     }
                 }
@@ -80,19 +84,31 @@ namespace Rezerwacja
 
         private void Usun_Click(object sender, EventArgs e)
         {
-            Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
-            MessageBoxResult result = MessageBox.Show("Czy na pewno chcesz usunąć rezerwację ?", " ", MessageBoxButton.OKCancel);
-            if (result == MessageBoxResult.OK)
+            if (ListaRezerwacjeInfo.SelectedItem != null)
             {
-                UsunClass.delete("Rezerwacje", rezerwacja.Id);
-                MessageBox.Show("Pomyślnie usunięto. Nastąpi powrót do menu głównego");
-                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+                Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
+               
+                MessageBoxResult result = MessageBox.Show("Czy na pewno chcesz usunąć rezerwację ?", "Usuwanie", MessageBoxButton.OKCancel);
+                if (result == MessageBoxResult.OK)
+                {
+                    UsunClass.delete("Rezerwacje", rezerwacja.Id);
+                    MessageBox.Show("Pomyślnie usunięto. Nastąpi powrót do menu głównego");
+                    NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
 
+                }
             }
-   
+            else
+            { MessageBox.Show("Zaznacz element"); }
 
         }
-
+        private void Edytuj_Click(object sender, EventArgs e)
+        {
+            Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
+            if (ListaRezerwacjeInfo.SelectedItem != null)
+                NavigationService.Navigate(new Uri("/Edytuj.xaml?Id=" + rezerwacja.Id + "&Imie=" + rezerwacja.Imie + "&Nazwisko=" + rezerwacja.Nazwisko + "&Obiekt=" + rezerwacja.Obiekt + "&Dni=" + rezerwacja.IloscDni + "&Goscie=" + rezerwacja.IloscGosci + "&Data=" + rezerwacja.Data + "&Cena=" + rezerwacja.Cena, UriKind.Relative));
+            else
+                MessageBox.Show("Zaznacz rezerwację");
+        }
 
     }
 }

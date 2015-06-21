@@ -146,11 +146,4 @@ C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\layout.resfiles
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\layout.resfiles.intermediate
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\Resources.resfiles
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\Resources.resfiles.intermediate
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\pri.resfiles
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\pri.resfiles.intermediate
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\priconfig.xml
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\SQLitePCL\priconfig.xml.intermediate
+C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Edytuj.g.cs

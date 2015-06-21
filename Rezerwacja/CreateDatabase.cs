@@ -16,8 +16,10 @@ namespace Rezerwacja
                                             Nazwisko    VARCHAR( 140 ),
                                             Ilosc INTEGER,
                                             Obiekt VARCHAR( 140 ),
-                                            Data VARCHAR( 140 ),
-                                            Telefon VARCHAR ( 15 ) 
+                                            Data DATE,
+                                            Telefon VARCHAR ( 15 ),
+                                            IloscDni INTEGER,
+                                            DoZaplaty INTEGER 
                             );";
             using (var statement = db.Prepare(sql))
             {
@@ -27,7 +29,8 @@ namespace Rezerwacja
             sql = @"CREATE TABLE IF NOT EXISTS
                                 Obiekty (Id          INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                                          Nazwa        VARCHAR( 140 ),
-                                         Ilosc INTEGER
+                                         Ilosc INTEGER,
+                                         Cena INTEGER
                             )";
             using (var statement = db.Prepare(sql))
             {

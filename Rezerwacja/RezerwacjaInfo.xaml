@@ -22,7 +22,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Menadżer rezerwacji" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock Text="Rezerwacja" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
@@ -38,10 +38,16 @@
                                 <Run Text="{Binding Nazwisko}"></Run>
                                 <Run Text="&#x0a;Obiekt:" />
                                 <Run Text="{Binding Obiekt}"></Run>
-                                <Run Text="&#x0a;Ilosc:" />    
-                                <Run Text="{Binding Ilosc}"></Run>
+                                <Run Text="&#x0a;Ilosc Gości:" />    
+                                <Run Text="{Binding IloscGosci}"></Run>
                                 <Run Text="&#x0a;Data:" />
                                 <Run Text="{Binding Data}"></Run>
+                            <Run Text="&#x0a;Telefon: "/>
+                            <Run Text="{Binding Telefon}"></Run>
+                            <Run Text="&#x0a;Ilość dni pobytu: "/>
+                            <Run Text="{Binding IloscDni}"></Run>
+                            <Run Text="&#x0a;Zapłata: "/>
+                            <Run Text="{Binding Cena}"></Run>
                         </TextBlock>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
@@ -50,6 +56,7 @@
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton Click="Edytuj_Click" IconUri="/Toolkit.Content/ApplicationBar.Check.png" Text="Edytuj"/>
             <shell:ApplicationBarIconButton Click="Usun_Click" IconUri="/Toolkit.Content/ApplicationBar.Delete.png" Text="Usuń"/>
             
         </shell:ApplicationBar>

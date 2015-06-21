@@ -1,9 +1,13 @@
-﻿<xapCache source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="21.06.2015 01:25:15">
-  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="21.06.2015 01:25:13" />
-  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.dll" archivePath="Rezerwacja.dll" lastWriteTime="21.06.2015 01:25:13" />
+﻿<xapCache source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Rezerwacja_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="21.06.2015 19:24:54">
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="21.06.2015 19:24:29" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.dll" archivePath="Rezerwacja.dll" lastWriteTime="21.06.2015 19:24:51" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.dll" archivePath="SQLitePCL.Ext.dll" lastWriteTime="14.06.2015 15:15:52" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="14.06.2015 15:14:28" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="14.06.2015 15:14:28" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Icons\beach.png" archivePath="Assets\Icons\beach.png" lastWriteTime="21.06.2015 16:37:35" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Icons\home-variant.png" archivePath="Assets\Icons\home-variant.png" lastWriteTime="21.06.2015 16:46:26" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Icons\library-plus.png" archivePath="Assets\Icons\library-plus.png" lastWriteTime="21.06.2015 16:41:31" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Icons\playlist-plus.png" archivePath="Assets\Icons\playlist-plus.png" lastWriteTime="21.06.2015 16:46:26" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="14.06.2015 15:14:28" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="14.06.2015 15:14:28" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="14.06.2015 15:14:28" />
@@ -30,6 +34,6 @@
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\packages\SQLitePCL.3.8.7.2\build\wp81\x86\SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll" archivePath="SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll" lastWriteTime="14.06.2015 15:15:52" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.8.10.2\Redist\Debug\x86\sqlite3.dll" archivePath="sqlite3.dll" lastWriteTime="14.06.2015 13:01:00" />
   <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="20.06.2015 21:03:28" />
-  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="21.06.2015 01:25:15" />
-  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="20.06.2015 21:07:11" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="21.06.2015 19:24:53" />
+  <file source="C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="21.06.2015 18:17:12" />
 </xapCache>

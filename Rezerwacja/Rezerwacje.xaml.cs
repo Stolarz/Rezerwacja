@@ -14,34 +14,41 @@ namespace Rezerwacja
 {
     public partial class Rezerwacje : PhoneApplicationPage
     {
-        ObservableCollection<AktualneRezerwacje> x;
+        ObservableCollection<RezerwacjeClass> x;
+        ObservableCollection<RezerwacjeClass> y;
+
         public Rezerwacje()
         {
             InitializeComponent();
             x = getValues();
             ListaRezerwacje.ItemsSource = x;
+            y = getOldValues();
+            ListaPrzyszlychRezerwacji.ItemsSource = y;
+
         }
 
 
-        public class AktualneRezerwacje
+        public class RezerwacjeClass
         {
             public string Id { get; set; }
             public string Imie { get; set; }
             public string Nazwisko { get; set; }
             public string Obiekt { get; set; }
         }
+     
 
-        public static ObservableCollection<AktualneRezerwacje> getValues()
+        public static ObservableCollection<RezerwacjeClass> getValues()
         {
-            ObservableCollection<AktualneRezerwacje> list = new ObservableCollection<AktualneRezerwacje>();
-
+            ObservableCollection<RezerwacjeClass> list = new ObservableCollection<RezerwacjeClass>();
+            DateTime date = DateTime.Today;
             using (var connection  = new SQLiteConnection("database.db"))
             {
-                using(var statment = connection.Prepare(@"Select ID,Imie,Nazwisko,Obiekt FROM Rezerwacje;"))
+                using(var statment = connection.Prepare(@"Select ID,Imie,Nazwisko,Obiekt FROM Rezerwacje WHERE ? >= Data;"))
                 {
+                    statment.Bind(1, date.ToString("d"));
                     while(statment.Step() == SQLiteResult.ROW)
                     {
-                        list.Add(new AktualneRezerwacje()
+                        list.Add(new RezerwacjeClass()
                         {
                             Id = statment[0].ToString(),
                             Imie = (string)statment[1],
@@ -54,16 +61,55 @@ namespace Rezerwacja
             return list;
         }
 
+
+        public static ObservableCollection<RezerwacjeClass> getOldValues()
+        {
+            ObservableCollection<RezerwacjeClass> list = new ObservableCollection<RezerwacjeClass>();
+            DateTime date = DateTime.Today;
+            using (var connection = new SQLiteConnection("database.db"))
+            {
+                using (var statment = connection.Prepare(@"Select ID,Imie,Nazwisko,Obiekt FROM Rezerwacje WHERE ? < Data;"))
+                {
+                    statment.Bind(1, date.ToString("d"));
+                    while (statment.Step() == SQLiteResult.ROW)
+                    {
+                        list.Add(new RezerwacjeClass()
+                        {
+                            Id = statment[0].ToString(),
+                            Imie = (string)statment[1],
+                            Nazwisko = (string)statment[2],
+                            Obiekt = (string)statment[3]
+                        });
+                    }
+                }
+            }
+            return list;
+        }
+
+
+
+
+
         private void ListaRezerwacje_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ListaRezerwacje.SelectedItem != null)
             {
-                AktualneRezerwacje info = (AktualneRezerwacje)(sender as LongListSelector).SelectedItem;
-                MessageBox.Show(info.Id);
+                RezerwacjeClass info = (RezerwacjeClass)(sender as LongListSelector).SelectedItem;
+                
                 NavigationService.Navigate(new Uri("/RezerwacjaInfo.xaml?msg=" + info.Id, UriKind.Relative));
                 ListaRezerwacje.SelectedItem = null;
             }
             
+        }
+
+        private void ListaPrzyszlychRezerwacji_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(ListaPrzyszlychRezerwacji.SelectedItem != null)
+            {
+                RezerwacjeClass info = (RezerwacjeClass)(sender as LongListSelector).SelectedItem;
+                NavigationService.Navigate(new Uri("/RezerwacjaInfo.xaml?msg=" + info.Id, UriKind.Relative));
+                ListaPrzyszlychRezerwacji.SelectedItem = null;
+            }
         }
     }
 }

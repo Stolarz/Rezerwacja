@@ -24,15 +24,16 @@ namespace Rezerwacja
             {
                 using (var connection = new SQLiteConnection("database.db"))
                 {
-                    using (var statment = connection.Prepare(@"INSERT INTO Obiekty(Nazwa,Ilosc) VALUES (?,?);"))
+                    using (var statment = connection.Prepare(@"INSERT INTO Obiekty(Nazwa,Ilosc,Cena) VALUES (?,?,?);"))
                     {
                         statment.Bind(1, ObiektNazwaTextbox.Text);
                         statment.Bind(2, ObiektIloscTextbox.Text);
-                       
+                        statment.Bind(3, CenaTextBox.Text);
                         statment.Step();
                         statment.Reset();
                         statment.ClearBindings();
                         MessageBox.Show("Pomyślnie dodano obiekt");
+                        NavigationService.Navigate(new Uri("/Obiekty.xaml", UriKind.Relative));
                     }
                 }
 

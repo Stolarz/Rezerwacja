@@ -24,9 +24,13 @@
                     <phone:LongListSelector.ItemTemplate>
                         <DataTemplate>
                             <TextBlock>
+                                <Run Text="Imię: "/>
                                 <Run Text="{Binding Imie}"></Run>
+                                <Run Text="&#x0a;Nazwisko: "/>
                                 <Run Text="{Binding Nazwisko}"></Run>
+                                <Run Text="&#x0a;Obiekt: "/>
                                 <Run Text="{Binding Obiekt}"></Run>
+                                <Run Text="&#x0a;----------------------"/>
                             </TextBlock>
                         </DataTemplate>
                     </phone:LongListSelector.ItemTemplate>
@@ -36,7 +40,23 @@
 
             <!--Panorama item two-->
             <phone:PanoramaItem Header="Nadchodzące">
-                <Grid/>
+
+                <phone:LongListSelector Name="ListaPrzyszlychRezerwacji" SelectionChanged="ListaPrzyszlychRezerwacji_SelectionChanged">
+                    <phone:LongListSelector.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <Run Text="Imię: "/>
+                                <Run Text="{Binding Imie}"></Run>
+                                <Run Text="&#x0a;Nazwisko: "/>
+                                <Run Text="{Binding Nazwisko}"></Run>
+                                <Run Text="&#x0a;Obiekt: "/>
+                                <Run Text="{Binding Obiekt}"></Run>
+                                <Run Text="&#x0a;----------------------"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                </phone:LongListSelector>
+
             </phone:PanoramaItem>
         </phone:Panorama>
     </Grid>

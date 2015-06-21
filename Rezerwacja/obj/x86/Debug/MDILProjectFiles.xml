@@ -6,6 +6,10 @@
     <File>SQLitePCL.Ext.dll</File>
     <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
+    <File>Assets\Icons\beach.png</File>
+    <File>Assets\Icons\home-variant.png</File>
+    <File>Assets\Icons\library-plus.png</File>
+    <File>Assets\Icons\playlist-plus.png</File>
     <File>Assets\Logo.png</File>
     <File>Assets\SplashScreen.png</File>
     <File>Assets\SquareTile150x150.png</File>
