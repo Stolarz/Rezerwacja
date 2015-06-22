@@ -15,6 +15,7 @@ namespace Rezerwacja
     {
         string msg = string.Empty;
         string cena = string.Empty;
+        string ilosc_osob = string.Empty;
         int cenafinalna = 0;
         public Page1()
         {
@@ -32,6 +33,7 @@ namespace Rezerwacja
                 NavigationContext.QueryString.TryGetValue("cena", out cena);
                 CenaTextBlock.Text = cena+" zł";
                 ObiektText.Text = "Nazwa: "+msg;
+                ilosc_osob = NavigationContext.QueryString["ilosc"];
                 ImieTextBox.IsEnabled = true;
                 NazwiskoTextBox.IsEnabled = true;
                 IloscDni.IsEnabled = true;
@@ -39,6 +41,7 @@ namespace Rezerwacja
                 WyborDaty.IsEnabled = true;
                 DodajButton.IsEnabled = true;
                 NumerTelefonu.IsEnabled = true;
+                
             }
         }
       
@@ -48,37 +51,44 @@ namespace Rezerwacja
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Convert.ToInt32(ilosc_osob) >= Convert.ToInt32(LiczbaGosci.Text))
             {
-                using(var connection = new SQLiteConnection("database.db"))
+                try
                 {
-                   cenafinalna = Convert.ToInt32(cena) * Convert.ToInt32(IloscDni.Text);
-                  
-                    using(var statment = connection.Prepare(@"INSERT INTO Rezerwacje (Imie,Nazwisko,Ilosc,Obiekt,Data,Telefon,IloscDni,DoZaplaty) VALUES (?,?,?,?,?,?,?,?);"))
+                    using (var connection = new SQLiteConnection("database.db"))
                     {
-                        
-                        statment.Bind(1, ImieTextBox.Text);
-                        statment.Bind(2, NazwiskoTextBox.Text);
-                        statment.Bind(3, LiczbaGosci.Text);
-                        statment.Bind(4, msg);
-                        statment.Bind(5, WyborDaty.Value.ToString().Substring(0,9));
-                        statment.Bind(6, NumerTelefonu.Text);
-                        statment.Bind(7, IloscDni.Text);
-                        statment.Bind(8, cenafinalna);
-                        statment.Step();
-                        statment.Reset();
-                        statment.ClearBindings();
+                        cenafinalna = Convert.ToInt32(cena) * Convert.ToInt32(IloscDni.Text);
+
+                        using (var statment = connection.Prepare(@"INSERT INTO Rezerwacje (Imie,Nazwisko,Ilosc,Obiekt,Data,Telefon,IloscDni,DoZaplaty) VALUES (?,?,?,?,?,?,?,?);"))
+                        {
+
+                            statment.Bind(1, ImieTextBox.Text);
+                            statment.Bind(2, NazwiskoTextBox.Text);
+                            statment.Bind(3, LiczbaGosci.Text);
+                            statment.Bind(4, msg);
+                            statment.Bind(5, WyborDaty.Value.ToString().Substring(0, 9));
+                            statment.Bind(6, NumerTelefonu.Text);
+                            statment.Bind(7, IloscDni.Text);
+                            statment.Bind(8, cenafinalna);
+                            statment.Step();
+                            statment.Reset();
+                            statment.ClearBindings();
+
+                        }
+                        MessageBox.Show("Pomyślnie dodano rezerwację");
+                        NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
 
                     }
                 }
-                MessageBox.Show("Pomyślnie dodano rezerwację");
-                NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Exception\n" + ex.ToString());
+                }
             }
-            catch(Exception ex)
+            else
             {
-                Debug.WriteLine("Exception\n" + ex.ToString());
+                MessageBox.Show("Liczba gości większa od miejsca w obiekcie.");
             }
-
         }
 
         private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)

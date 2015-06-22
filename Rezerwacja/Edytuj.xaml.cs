@@ -15,6 +15,7 @@ namespace Rezerwacja
         
         string id="";
         string msg = "";
+        string liczba_gosci="";
         public Edytuj()
         {
             InitializeComponent();
@@ -37,6 +38,8 @@ namespace Rezerwacja
                 ObiektText.Text = EditValues.Obiekt;
                 WyborDaty.Value = Convert.ToDateTime(EditValues.Data);
                 CenaTextBlock.Text = EditValues.Cena;
+                liczba_gosci = NavigationContext.QueryString["Goscie"];
+                
             }
             id = EditValues.Id;
             ImieTextBox.Text = EditValues.Imie;
@@ -49,16 +52,22 @@ namespace Rezerwacja
             {
                 ObiektText.Text = msg;
                 CenaTextBlock.Text = NavigationContext.QueryString["cena"];
+                liczba_gosci = NavigationContext.QueryString["liczba"];
             }
            
         }
 
              private void Button_Click(object sender, RoutedEventArgs e)
              {
-                 int pelnacena = Convert.ToInt32(CenaTextBlock.Text) * Convert.ToInt32(IloscDni.Text);
-                 UsunClass.edit(id, ImieTextBox.Text, NazwiskoTextBox.Text, ObiektText.Text, LiczbaGosci.Text, IloscDni.Text, WyborDaty.Value.ToString().Substring(0, 9), pelnacena,NumerTelefonu.Text);
-                 MessageBox.Show("Edycja wykonana pomyślnie. Nastąpi przejście do listy rezerwacji");
-                 NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
+                 if (Convert.ToInt32(liczba_gosci) >= Convert.ToInt32(LiczbaGosci.Text))
+                 {
+                     int pelnacena = Convert.ToInt32(CenaTextBlock.Text) * Convert.ToInt32(IloscDni.Text);
+                     UsunClass.edit(id, ImieTextBox.Text, NazwiskoTextBox.Text, ObiektText.Text, LiczbaGosci.Text, IloscDni.Text, WyborDaty.Value.ToString().Substring(0, 9), pelnacena, NumerTelefonu.Text);
+                     MessageBox.Show("Edycja wykonana pomyślnie. Nastąpi przejście do listy rezerwacji");
+                     NavigationService.Navigate(new Uri("/Rezerwacje.xaml", UriKind.Relative));
+                 }
+                 else
+                     MessageBox.Show("Liczba gości większa od miejsca w obiekcie.");
              }
 
              private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)

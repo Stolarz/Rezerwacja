@@ -53,9 +53,9 @@ namespace Rezerwacja
         string msg = "";
         RezerwacjaBlueprint element = (RezerwacjaBlueprint)(sender as LongListSelector).SelectedItem;
         if (NavigationContext.QueryString.TryGetValue("msg", out msg))
-        NavigationService.Navigate(new Uri("/Edytuj.xaml?msg=" + element.Nazwa + "&cena=" + element.Cena, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Edytuj.xaml?msg=" + element.Nazwa + "&cena=" + element.Cena + "&ilosc=" + element.Ilosc, UriKind.Relative));
         else
-        NavigationService.Navigate(new Uri("/DodaniePage.xaml?msg="+element.Nazwa+"&cena="+element.Cena, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/DodaniePage.xaml?msg=" + element.Nazwa + "&cena=" + element.Cena + "&ilosc=" + element.Ilosc, UriKind.Relative));
 
     }
 
