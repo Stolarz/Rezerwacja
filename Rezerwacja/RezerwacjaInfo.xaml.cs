@@ -13,7 +13,8 @@ namespace Rezerwacja
 {
     public partial class RezerwacjaInfo : PhoneApplicationPage
     {
-        ObservableCollection<Info> x;
+        ObservableCollection<RezerwacjaBlueprint> x;
+
        public string id_msg;
         public RezerwacjaInfo()
         {
@@ -34,26 +35,9 @@ namespace Rezerwacja
             ListaRezerwacjeInfo.ItemsSource = x;
         }
 
-
-
-        public class Info
+        public static ObservableCollection<RezerwacjaBlueprint> getValues(string id_msg)
         {
-            public string Id { get; set; }
-            public string Imie { get; set; }
-            public string Nazwisko { get; set; }
-            public string Obiekt { get; set; }
-            public string IloscGosci { get; set; }
-            public string Data { get; set; }
-            public string Telefon { get; set; }
-            public string IloscDni { get; set; }
-            public string Cena { get; set; }
-        }
-
-
-
-        public static ObservableCollection<Info> getValues(string id_msg)
-        {
-            ObservableCollection<Info> list = new ObservableCollection<Info>();
+            ObservableCollection<RezerwacjaBlueprint> list = new ObservableCollection<RezerwacjaBlueprint>();
 
             using (var connection = new SQLiteConnection("database.db"))
             {
@@ -64,7 +48,7 @@ namespace Rezerwacja
                     
                     while (statment.Step() == SQLiteResult.ROW)
                     {
-                        list.Add(new Info()
+                        list.Add(new RezerwacjaBlueprint()
                         {
                             Id = statment[0].ToString(),
                             Imie = (string)statment[1],
@@ -86,7 +70,7 @@ namespace Rezerwacja
         {
             if (ListaRezerwacjeInfo.SelectedItem != null)
             {
-                Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
+                RezerwacjaBlueprint rezerwacja = (RezerwacjaBlueprint)this.ListaRezerwacjeInfo.SelectedItem;
                
                 MessageBoxResult result = MessageBox.Show("Czy na pewno chcesz usunąć rezerwację ?", "Usuwanie", MessageBoxButton.OKCancel);
                 if (result == MessageBoxResult.OK)
@@ -103,10 +87,13 @@ namespace Rezerwacja
         }
         private void Edytuj_Click(object sender, EventArgs e)
         {
-            Info rezerwacja = (Info)this.ListaRezerwacjeInfo.SelectedItem;
-            if (ListaRezerwacjeInfo.SelectedItem != null)
-                NavigationService.Navigate(new Uri("/Edytuj.xaml?Id=" + rezerwacja.Id + "&Imie=" + rezerwacja.Imie + "&Nazwisko=" + rezerwacja.Nazwisko + "&Obiekt=" + rezerwacja.Obiekt + "&Dni=" + rezerwacja.IloscDni + "&Goscie=" + rezerwacja.IloscGosci + "&Data=" + rezerwacja.Data + "&Cena=" + rezerwacja.Cena+"&Telefon="+rezerwacja.Telefon, UriKind.Relative));
-            else
+            RezerwacjaBlueprint rezerwacja = (RezerwacjaBlueprint)this.ListaRezerwacjeInfo.SelectedItem;
+            if (ListaRezerwacjeInfo.SelectedItem != null){
+               int cenaodobowa;
+               cenaodobowa = Convert.ToInt32(rezerwacja.Cena) /Convert.ToInt32(rezerwacja.IloscDni);
+               NavigationService.Navigate(new Uri("/Edytuj.xaml?Id=" + rezerwacja.Id + "&Imie=" + rezerwacja.Imie + "&Nazwisko=" + rezerwacja.Nazwisko + "&Obiekt=" + rezerwacja.Obiekt + "&Dni=" + rezerwacja.IloscDni + "&Goscie=" + rezerwacja.IloscGosci + "&Data=" + rezerwacja.Data + "&Cena=" + cenaodobowa+"&Telefon="+rezerwacja.Telefon, UriKind.Relative));
+            }
+                else
                 MessageBox.Show("Zaznacz rezerwację");
         }
 

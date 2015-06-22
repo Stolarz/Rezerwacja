@@ -145,5 +145,5 @@ C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\Bin\x86\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache
 C:\Users\Tomek\documents\visual studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Edytuj.g.cs
+C:\Users\Tomek\Documents\Visual Studio 2013\Projects\Rezerwacja\Rezerwacja\obj\x86\Debug\Rezerwacja.csprojResolveAssemblyReference.cache

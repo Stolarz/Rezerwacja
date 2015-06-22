@@ -36,7 +36,7 @@ namespace Rezerwacja
                 EditValues.Telefon = NavigationContext.QueryString["Telefon"];
                 ObiektText.Text = EditValues.Obiekt;
                 WyborDaty.Value = Convert.ToDateTime(EditValues.Data);
-                //CenaTextBlock.Text = EditValues.Cena;
+                CenaTextBlock.Text = EditValues.Cena;
             }
             id = EditValues.Id;
             ImieTextBox.Text = EditValues.Imie;
@@ -44,15 +44,12 @@ namespace Rezerwacja
             IloscDni.Text = EditValues.Dni;
             LiczbaGosci.Text = EditValues.Goscie;
             NumerTelefonu.Text = EditValues.Telefon;
+            
             if (NavigationContext.QueryString.TryGetValue("msg", out msg))
             {
                 ObiektText.Text = msg;
                 CenaTextBlock.Text = NavigationContext.QueryString["cena"];
             }
-            
-            
-
-
            
         }
 

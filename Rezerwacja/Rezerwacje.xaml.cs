@@ -14,8 +14,8 @@ namespace Rezerwacja
 {
     public partial class Rezerwacje : PhoneApplicationPage
     {
-        ObservableCollection<RezerwacjeClass> x;
-        ObservableCollection<RezerwacjeClass> y;
+        ObservableCollection<RezerwacjaBlueprint> x;
+        ObservableCollection<RezerwacjaBlueprint> y;
 
         public Rezerwacje()
         {
@@ -28,18 +28,9 @@ namespace Rezerwacja
         }
 
 
-        public class RezerwacjeClass
+        public static ObservableCollection<RezerwacjaBlueprint> getValues()
         {
-            public string Id { get; set; }
-            public string Imie { get; set; }
-            public string Nazwisko { get; set; }
-            public string Obiekt { get; set; }
-        }
-     
-
-        public static ObservableCollection<RezerwacjeClass> getValues()
-        {
-            ObservableCollection<RezerwacjeClass> list = new ObservableCollection<RezerwacjeClass>();
+            ObservableCollection<RezerwacjaBlueprint> list = new ObservableCollection<RezerwacjaBlueprint>();
             DateTime date = DateTime.Today;
             using (var connection  = new SQLiteConnection("database.db"))
             {
@@ -48,7 +39,7 @@ namespace Rezerwacja
                     statment.Bind(1, date.ToString("d"));
                     while(statment.Step() == SQLiteResult.ROW)
                     {
-                        list.Add(new RezerwacjeClass()
+                        list.Add(new RezerwacjaBlueprint()
                         {
                             Id = statment[0].ToString(),
                             Imie = (string)statment[1],
@@ -62,9 +53,9 @@ namespace Rezerwacja
         }
 
 
-        public static ObservableCollection<RezerwacjeClass> getOldValues()
+        public static ObservableCollection<RezerwacjaBlueprint> getOldValues()
         {
-            ObservableCollection<RezerwacjeClass> list = new ObservableCollection<RezerwacjeClass>();
+            ObservableCollection<RezerwacjaBlueprint> list = new ObservableCollection<RezerwacjaBlueprint>();
             DateTime date = DateTime.Today;
             using (var connection = new SQLiteConnection("database.db"))
             {
@@ -73,7 +64,7 @@ namespace Rezerwacja
                     statment.Bind(1, date.ToString("d"));
                     while (statment.Step() == SQLiteResult.ROW)
                     {
-                        list.Add(new RezerwacjeClass()
+                        list.Add(new RezerwacjaBlueprint()
                         {
                             Id = statment[0].ToString(),
                             Imie = (string)statment[1],
@@ -94,7 +85,7 @@ namespace Rezerwacja
         {
             if (ListaRezerwacje.SelectedItem != null)
             {
-                RezerwacjeClass info = (RezerwacjeClass)(sender as LongListSelector).SelectedItem;
+                RezerwacjaBlueprint info = (RezerwacjaBlueprint)(sender as LongListSelector).SelectedItem;
                 
                 NavigationService.Navigate(new Uri("/RezerwacjaInfo.xaml?msg=" + info.Id, UriKind.Relative));
                 ListaRezerwacje.SelectedItem = null;
@@ -106,7 +97,7 @@ namespace Rezerwacja
         {
             if(ListaPrzyszlychRezerwacji.SelectedItem != null)
             {
-                RezerwacjeClass info = (RezerwacjeClass)(sender as LongListSelector).SelectedItem;
+                RezerwacjaBlueprint info = (RezerwacjaBlueprint)(sender as LongListSelector).SelectedItem;
                 NavigationService.Navigate(new Uri("/RezerwacjaInfo.xaml?msg=" + info.Id, UriKind.Relative));
                 ListaPrzyszlychRezerwacji.SelectedItem = null;
             }

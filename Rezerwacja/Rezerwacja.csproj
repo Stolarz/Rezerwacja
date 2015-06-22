@@ -120,6 +120,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RezerwacjaBlueprint.cs" />
     <Compile Include="RezerwacjaInfo.xaml.cs">
       <DependentUpon>RezerwacjaInfo.xaml</DependentUpon>
     </Compile>

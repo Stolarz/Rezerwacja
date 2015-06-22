@@ -15,7 +15,7 @@ namespace Rezerwacja
 {
     public partial class Obiekty : PhoneApplicationPage
     {
-        ObservableCollection<SzablonObiekt> x;
+        ObservableCollection<RezerwacjaBlueprint> x;
         public Obiekty()
         {
             InitializeComponent();
@@ -24,18 +24,9 @@ namespace Rezerwacja
             ListaObiektow.ItemsSource = x;
         } 
 
-
-        public class SzablonObiekt
+        public static ObservableCollection<RezerwacjaBlueprint> getValues()
         {
-            public string Id { get; set; }
-            public string Nazwa { get; set; }
-            public string Ilosc { get; set; }
-            public string Cena { get; set; }
-
-        }
-        public static ObservableCollection<SzablonObiekt> getValues()
-        {
-            ObservableCollection<SzablonObiekt> list = new ObservableCollection<SzablonObiekt>();
+            ObservableCollection<RezerwacjaBlueprint> list = new ObservableCollection<RezerwacjaBlueprint>();
 
             using (var connection = new SQLiteConnection("database.db"))
             {
@@ -44,7 +35,7 @@ namespace Rezerwacja
                     while (statment.Step() == SQLiteResult.ROW)
                     {
                         
-                        list.Add(new SzablonObiekt()
+                        list.Add(new RezerwacjaBlueprint()
                         {
                             Id = statment[0].ToString(),
                             Nazwa = (string)statment[1],
@@ -57,12 +48,10 @@ namespace Rezerwacja
             return list;
         }
 
-        
-        
     public void ListaObiektow_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         string msg = "";
-        SzablonObiekt element = (SzablonObiekt)(sender as LongListSelector).SelectedItem;
+        RezerwacjaBlueprint element = (RezerwacjaBlueprint)(sender as LongListSelector).SelectedItem;
         if (NavigationContext.QueryString.TryGetValue("msg", out msg))
         NavigationService.Navigate(new Uri("/Edytuj.xaml?msg=" + element.Nazwa + "&cena=" + element.Cena, UriKind.Relative));
         else
@@ -72,7 +61,7 @@ namespace Rezerwacja
 
     private void Delete_Click(object sender, RoutedEventArgs e)
     {
-        SzablonObiekt obiekt = (SzablonObiekt)(sender as MenuItem).DataContext;
+        RezerwacjaBlueprint obiekt = (RezerwacjaBlueprint)(sender as MenuItem).DataContext;
        MessageBoxResult result = MessageBox.Show("Uwaga za chwię usuniesz obiekt o nazwie: " + obiekt.Nazwa + " Czy jesteś pewien ?", "Usuwanie", MessageBoxButton.OKCancel);
        if (result == MessageBoxResult.OK)
        {

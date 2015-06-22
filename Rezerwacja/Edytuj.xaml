@@ -37,8 +37,8 @@
             <Button Content="Zmień obiekt rezerwacji" Margin="70,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,-0.195" Tap="Button_Tap"/>
             <toolkit:DatePicker  x:Name="WyborDaty" IsEnabled="True" Margin="0,443,0,-443" FlowDirection="LeftToRight" HorizontalContentAlignment="Center"/>
             <Button x:Name="ZapiszButton" IsEnabled="True" Content="Zapisz" HorizontalAlignment="Left" Margin="10,524,0,0" VerticalAlignment="Top" Height="83" Width="436" Click="Button_Click"/>
-            <TextBlock x:Name="ObiektText" HorizontalAlignment="Left" Margin="10,69,0,0" TextWrapping="Wrap" Text="Nie wybrano obiektu" VerticalAlignment="Top" TextAlignment="Center" Width="190"/>
-            <TextBlock x:Name="CenaTextBlock" HorizontalAlignment="Left" Margin="256,69,0,0" TextWrapping="Wrap" Text="Cena nieznana" VerticalAlignment="Top" Width="190" TextAlignment="Right"/>
+            <TextBlock x:Name="ObiektText" HorizontalAlignment="Left" Margin="83,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Right" Width="117"/>
+            <TextBlock x:Name="CenaTextBlock" HorizontalAlignment="Left" Margin="358,69,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="88" TextAlignment="Right"/>
             <TextBlock HorizontalAlignment="Left" Margin="255,314,0,0" TextWrapping="Wrap" Text="Ilość Gości" VerticalAlignment="Top"/>
             <TextBox x:Name="LiczbaGosci" IsEnabled="True" HorizontalAlignment="Left" Height="72" Margin="358,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" InputScope="Number" Text="1" TextAlignment="Center"/>
             <TextBox x:Name="IloscDni" IsEnabled="True" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" Margin="358,359,0,0" TextAlignment="Center" InputScope="Number" Text="1"/>
@@ -49,6 +49,8 @@
             </TextBlock>
             <TextBox HorizontalAlignment="Left" IsEnabled="True" x:Name="NumerTelefonu" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" Margin="-1,341,0,0" />
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Numer Telefonu" VerticalAlignment="Top" Margin="10,309,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Doba:" VerticalAlignment="Top" Margin="276,69,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Obiekt:" VerticalAlignment="Top" Margin="1,69,0,0"/>
 
         </Grid>
     </Grid>

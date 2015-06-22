@@ -72,9 +72,11 @@
                     <ImageBrush ImageSource="/Assets/Icons/beach.png" Stretch="None"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <TextBlock HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" Text="Sprawdź rezerwacje" VerticalAlignment="Top" Height="32" Width="208" TextAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="208" TextAlignment="Center">
+            	<Run Text="Sprawdź rezerwację"/>
+            </TextBlock>
             <TextBlock Grid.Column="1" Margin="10,178,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Center">
-            	<Run Text="Dodaj rezerwacje"/>
+            	<Run Text="Dodaj rezerwację"/>
             	<LineBreak/>
             	<Run/>
             </TextBlock>
