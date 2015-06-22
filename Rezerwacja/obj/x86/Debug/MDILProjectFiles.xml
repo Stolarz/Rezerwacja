@@ -5,6 +5,7 @@
     <File>Rezerwacja.dll</File>
     <File>SQLitePCL.Ext.dll</File>
     <File>Assets\AlignmentGrid.png</File>
+    <File>Assets\ApplicationIcon.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\Icons\beach.png</File>
     <File>Assets\Icons\home-variant.png</File>
@@ -17,6 +18,7 @@
     <File>Assets\StoreLogo.png</File>
     <File>Assets\WideLogo.png</File>
     <File>Assets\Tiles\FlipCycleTileLarge.png</File>
+    <File>Assets\Tiles\FlipCycleTileMedium.png</File>
     <File>Assets\Tiles\FlipCycleTileSmall.png</File>
     <File>Assets\Tiles\IconicTileMediumLarge.png</File>
     <File>Assets\Tiles\IconicTileSmall.png</File>
@@ -27,14 +29,13 @@
     <File>Toolkit.Content\ApplicationBar.Delete.png</File>
     <File>Toolkit.Content\ApplicationBar.Select.png</File>
     <File>AppManifest.xaml</File>
-    <File>Assets\ApplicationIcon.png</File>
-    <File>Assets\Tiles\FlipCycleTileMedium.png</File>
     <File>Microsoft.Phone.Controls.dll</File>
     <File>Microsoft.Phone.Controls.Toolkit.dll</File>
     <File Type="PCL">SQLitePCL.dll</File>
     <File>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd</File>
     <File>SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll</File>
     <File>sqlite3.dll</File>
+    <File>beach.png</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>
   </XAPFiles>

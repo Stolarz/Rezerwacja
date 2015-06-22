@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
-  <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{498b691c-40c2-4934-b141-2d79c1cdfeee}" Title="Rezerwacja" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Rezerwacja author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Rezerwacja" PublisherID="{39b9a8d2-8a65-4b06-9ca8-f794b8451c55}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <DefaultLanguage xmlns="" code="pl-PL" />
+  <App xmlns="" ProductID="{498b691c-40c2-4934-b141-2d79c1cdfeee}" Title="Menadżer Rezerwacji" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Tomasz Solik" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Tomasz Solik" PublisherID="{39b9a8d2-8a65-4b06-9ca8-f794b8451c55}">
+    <IconPath IsRelative="true" IsResource="false">beach.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -15,17 +15,19 @@
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="RezerwacjaToken" TaskName="_default">
-        <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+        <TemplateIconic>
+          <SmallImageURI IsRelative="true" IsResource="false">beach.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>Rezerwacja</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
-        </TemplateFlip>
+          <IconImageURI IsRelative="true" IsResource="false">beach.png</IconImageURI>
+          <Title>Menadżer rezerwacji</Title>
+          <Message></Message>
+          <BackgroundColor></BackgroundColor>
+          <HasLarge>True</HasLarge>
+          <LargeContent1></LargeContent1>
+          <LargeContent2></LargeContent2>
+          <LargeContent3></LargeContent3>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateIconic>
       </PrimaryToken>
     </Tokens>
     <ActivatableClasses>

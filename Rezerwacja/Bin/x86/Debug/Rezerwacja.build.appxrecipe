@@ -246,6 +246,9 @@
     <AppxPackagedFile Include="C:\Users\Tomek\Documents\Visual Studio 2013\Projects\Rezerwacja\Rezerwacja\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Tomek\Documents\Visual Studio 2013\Projects\Rezerwacja\Rezerwacja\beach.png">
+      <PackagePath>beach.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tomek\Documents\Visual Studio 2013\Projects\Rezerwacja\Rezerwacja\Toolkit.Content\ApplicationBar.Add.png">
       <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
     </AppxPackagedFile>

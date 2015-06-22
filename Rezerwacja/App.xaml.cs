@@ -10,6 +10,9 @@ using Rezerwacja.Resources;
 using SQLitePCL;
 using Rezerwacja;
 using Windows.Storage;
+using Windows.UI.Notifications;
+using Windows.Data.Xml.Dom;
+
 namespace Rezerwacja
 {
     public partial class App : Application
@@ -73,6 +76,7 @@ namespace Rezerwacja
         {
             conn = new SQLiteConnection("database.db");
             CreateDatabase.LoadDatabase(conn);
+            
         }
 
         // Code to execute when the application is activated (brought to foreground)
